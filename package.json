@@ -1,0 +1,27 @@
+{
+  "name": "qr-gen",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Small QR code generator (transparent PNG) with login, dark mode and an activity log, for Cloudflare Workers.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250910.0",
+    "typescript": "^5.9.0",
+    "wrangler": "^4.0.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "QR_GEN_USER": {
+        "description": "Username for signing in to qr-gen. Defaults to \"admin\" if left empty."
+      },
+      "QR_GEN_PASSWORD": {
+        "description": "Password for signing in to qr-gen. Choose something long: the app is public on the internet. Sign-in stays disabled until this is set."
+      }
+    }
+  }
+}
