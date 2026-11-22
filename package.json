@@ -2,6 +2,7 @@
   "name": "qr-gen",
   "version": "2.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "Small QR code generator (transparent PNG) with login, dark mode and an activity log, for Cloudflare Workers.",
   "scripts": {

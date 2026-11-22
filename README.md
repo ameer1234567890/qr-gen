@@ -10,10 +10,7 @@ A small QR code generator that runs on **Cloudflare Workers**.
 
 ## Deploy
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/YOUR-USERNAME/qr-gen)
-
-> **Before the button works:** push this project to a public GitHub or GitLab repository, then replace
-> `YOUR-USERNAME/qr-gen` in the button URL above with your own repository path.
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ameer1234567890/qr-gen)
 
 Clicking the button walks you through:
 
@@ -73,3 +70,7 @@ guessing, add a Cloudflare rate-limiting rule on `/api/login`.
 
 Durable Objects with SQLite storage are available on the Workers Free plan. Typical URLs encode in a few
 milliseconds; a URL near the 2048-character maximum can approach the Free plan's 10 ms CPU limit.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
