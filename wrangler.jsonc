@@ -3,16 +3,5 @@
   "name": "qr-gen",
   "main": "src/index.ts",
   "compatibility_date": "2025-09-01",
-  "observability": { "enabled": true },
-
-  // Sessions and the activity log live in one SQLite-backed Durable Object.
-  // Cloudflare creates it automatically on deploy; there is nothing to provision.
-  "durable_objects": {
-    "bindings": [{ "name": "ACTIVITY_LOG", "class_name": "ActivityLog" }]
-  },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["ActivityLog"] }]
-
-  // Optional settings (all have defaults). Add under "vars" if you want to change them:
-  //   "vars": { "QR_GEN_SESSION_HOURS": "12" }
-  // QR_GEN_USER and QR_GEN_PASSWORD are set during deploy (or with `wrangler secret put`).
+  "observability": { "enabled": true }
 }
